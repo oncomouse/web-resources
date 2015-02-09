@@ -1,6 +1,8 @@
 var do_not_pluralize = [
 	'typography',
-	'css'
+	'css',
+	'responsive',
+	'responsive_design'
 ]
 $(document).ready(function() {
 	// Create the master Isotope container variable:
