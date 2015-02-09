@@ -3,11 +3,13 @@
 		position: fixed;
 		top: 6rem;
 		left: 15px;
+		bottom: 0;
 		padding:{
 			left: 15px;
 			right: 15px;
 		};
 		width: 25%;
+		overflow: auto;
 	}
 }
 
