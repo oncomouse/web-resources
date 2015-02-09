@@ -1,0 +1,5 @@
+url: http://www.google.com/fonts
+title: Google Web Fonts
+tags: css, typography
+description:
+  Google hosts one of the largest free repositories for loading web fonts into CSS. Web fonts are widely supported (though not in older browsers) and *greatly* increase the available fonts for use in web design. Google does not offer as high quality or as wide a selection as a paid service such as [Typekit](http://www.typekit.com), however.
