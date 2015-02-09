@@ -31,6 +31,9 @@ page "*", :layout => "layout"
 after_configuration do
     @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
     sprockets.append_path File.join "#{root}", @bower_config["directory"]
+    compass_config do |config|
+        config.add_import_path File.join "#{root}", @bower_config["directory"]
+    end
 end
 
 helpers do
