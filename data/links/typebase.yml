@@ -1,0 +1,5 @@
+url: http://typebase.pilsch.com/
+title: Dynamic Typebase
+description:
+  Quickly and easily generate a starting point for typographic best practices in CSS. Based on [Typebase](http://devinhunt.github.io/typebase.css/), this app lets you customize the settings you use, controlling font size, line height, and header scale.
+tags: typography, css
