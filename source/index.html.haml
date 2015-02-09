@@ -7,6 +7,8 @@ title: TWC 421 Web Resources
 		%p.text-center See links related to:
 		.list-group#filters
 			= link_to 'All', '', :class => 'list-group-item active', :data => {:filter => '*' }
+		.grey
+			= partial "about"
 	.col-md-7.col-md-offset-3
 		%h1 Web Resources
 		%p.current-filter.lead
@@ -20,10 +22,10 @@ title: TWC 421 Web Resources
 						%h2.title= link_to link["title"], link["url"]
 						:markdown
 							#{link['description']}
-						%p.text-right.tags
+						%p.text-right.tags.grey
 							Filed In:
 							%small
 								- link['tags'].split(', ').each do |tag|
-									%code=tag
+									%code.grey=tag
 			- else
 				%p.lead.text-center <strong>No Resources Found</strong>
