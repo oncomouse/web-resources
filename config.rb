@@ -79,8 +79,8 @@ configure :build do
 
   #activate :gzip
 
-  require 'lib/zip_source'
-  activate :zip_source
+  #require 'lib/zip_source'
+  #activate :zip_source
   
   # Enable cache buster
   activate :cache_buster
