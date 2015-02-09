@@ -1,4 +1,6 @@
-@media(min-width: 992px){
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+@media(min-width: $screen-md){
 	#sidebar {
 		position: fixed;
 		top: 6rem;
@@ -20,11 +22,11 @@
 }
 
 .grey {
-	color: #777;
+	color: $gray-light;
 	a {
-		color: lighten(#337ab7, 10%);
+		color: lighten($link-color, 10%);
 		&:hover, &:focus {
-			color: lighten(#23527c, 10%);
+			color: lighten($link-hover-color, 10%);
 		}
 	}
 }

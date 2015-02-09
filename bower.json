@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.2",
+    "bootstrap-sass-official": ">=3.3.2",
     "isotope": "~2.1.0",
     "underscore.inflection": "~1.2.0",
     "underscore.string": "~3.0.3",

@@ -25,7 +25,7 @@
 		- if build?
 			= stylesheet_link_tag("app.css", :media => "all", :rel => "stylesheet")
 		- else
-			= stylesheet_link_tag("vendor/bootstrap/dist/css/bootstrap", :media => "all", :rel => "stylesheet")
+			- #stylesheet_link_tag("vendor/bootstrap/dist/css/bootstrap", :media => "all", :rel => "stylesheet")
 			= stylesheet_link_tag("style.css", :media => "all", :rel => "stylesheet")
 		
 	%body{ :class => page_classes }
