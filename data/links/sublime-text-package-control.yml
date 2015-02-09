@@ -1,0 +1,5 @@
+url: https://packagecontrol.io/installation#st2
+title: Package Control
+tags: sublime_text
+description:
+  The package manager for [Sublime Text](#sublime_text). Use it to install other packages into your editor.
