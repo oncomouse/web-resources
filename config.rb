@@ -83,7 +83,7 @@ configure :build do
   activate :zip_source
   
   # Enable cache buster
-  # activate :cache_buster
+  activate :cache_buster
 
   # Use relative URLs
   activate :relative_assets
@@ -97,8 +97,5 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  #deploy.method = :rsync
-  #deploy.user = "me"
-  #deploy.host = "my.server.com"
-  #deploy.path = "~/my/deploy/path"
+	deploy.method = :git
 end
