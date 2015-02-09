@@ -1,0 +1,25 @@
+@media(min-width: 992px){
+	#sidebar {
+		position: fixed;
+		top: 2rem;
+		left: 15px;
+		padding:{
+			left: 15px;
+			right: 15px;
+		};
+		width: 25%;
+	}
+}
+
+#resources {
+	.resource {
+		width: 100%;
+	}
+}
+
+.tags {
+	color: #777;
+	code {
+		color: #777;
+	}
+}

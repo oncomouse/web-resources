@@ -1,0 +1,26 @@
+---
+title: TWC 421 Web Resources
+---
+
+.container-fluid
+	.col-md-3#sidebar
+		%p.lead.text-center TWC 421 Resources
+		.list-group#filters
+			= link_to 'All', '', :class => 'list-group-item active', :data => {:filter => '*' }
+	.col-md-7.col-md-offset-3
+		%h1 Web Resources
+		%p.current-filter.lead
+			Showing "<span id="current-filter">All</span>"
+		#resources
+			- data.links.each do |link|
+				- link[1]['id'] = link[0]
+				- link = link[1]
+				%div{ :class => 'resource ' + link['tags'].gsub(',','')}
+					%h2.title= link_to link["title"], link["url"]
+					:markdown
+						#{link['description']}
+					%p.text-right.tags
+						Filed In:
+						%small
+							- link['tags'].split(', ').each do |tag|
+								%code=tag

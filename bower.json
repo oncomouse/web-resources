@@ -1,0 +1,26 @@
+{
+  "name": "web-resources",
+  "version": "0.0.0",
+  "authors": [
+    "oncomouse <oncomouse@gmail.com>"
+  ],
+  "description": "TWC 421 Web Resource Repository",
+  "main": "config.rb",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "isotope": "~2.1.0",
+    "underscore.inflection": "~1.2.0",
+    "underscore.string": "~3.0.3",
+    "underscore": "~1.7.0"
+  }
+}
