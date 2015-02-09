@@ -2,7 +2,9 @@ var do_not_pluralize = [
 	'typography',
 	'css',
 	'responsive',
-	'responsive_design'
+	'responsive_design',
+	'getting_started',
+	'html'
 ]
 $(document).ready(function() {
 	// Create the master Isotope container variable:
@@ -50,6 +52,7 @@ $(document).ready(function() {
 		getSortData: {
 			name: '.title'
 		},
+		sortBy: 'name',
 		filter: initial_filter
 	});
 });
