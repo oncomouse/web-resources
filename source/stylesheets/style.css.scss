@@ -17,9 +17,12 @@
 	}
 }
 
-.tags {
+.grey {
 	color: #777;
-	code {
-		color: #777;
+	a {
+		color: lighten(#337ab7, 10%);
+		&:hover, &:focus {
+			color: lighten(#23527c, 10%);
+		}
 	}
 }
