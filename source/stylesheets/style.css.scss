@@ -1,5 +1,9 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 
+body {
+	margin-bottom: 12rem;
+}
+
 @media(min-width: $screen-md){
 	#sidebar {
 		position: fixed;
