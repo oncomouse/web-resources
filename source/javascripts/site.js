@@ -5,11 +5,18 @@ var do_not_pluralize = [
 	'responsive_design',
 	'getting_started',
 	'html'
-]
+];
 var to_uppercase = [
 	'css',
 	'html'
-]
+];
+
+function toggleFilterDisplay(old_selector, new_selector) {
+	$(old_selector).removeClass('active');
+	$(new_selector).addClass('active');
+	$('#current-filter').html($(new_selector).html());
+}
+
 $(document).ready(function() {
 	// Create the master Isotope container variable:
 	var $container = $('#resources');
@@ -39,18 +46,14 @@ $(document).ready(function() {
 	// Set up filter behavior:
 	$('#filters .list-group-item').on( 'click', function() {
 		var filterValue = $(this).attr('data-filter');
-		$('.list-group .active').toggleClass('active');
-		$(this).toggleClass('active');
-		$('#current-filter').html($('.list-group .active').html());
+		toggleFilterDisplay('.list-group .active', this);
 		$container.isotope({ filter: filterValue });
 
 	});
 	
 	var initial_filter = ((window.location.hash == '') ? '' : window.location.hash.replace('#','.'));
 	if(initial_filter != '') {
-		$('.list-group .active').toggleClass('active');
-		$('#filters .list-group-item[data-filter*="'+initial_filter+'"]').toggleClass('active');
-		$('#current-filter').html($('.list-group .active').html());
+		toggleFilterDisplay('.list-group .active', '#filters .list-group-item[data-filter*="'+initial_filter+'"]');
 	}
 	
 	$container.isotope({
