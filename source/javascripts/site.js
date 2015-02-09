@@ -4,7 +4,8 @@ var do_not_pluralize = [
 	'responsive',
 	'responsive_design',
 	'getting_started',
-	'html'
+	'html',
+	'sublime_text'
 ];
 var to_uppercase = [
 	'css',
