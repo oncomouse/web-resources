@@ -6,6 +6,10 @@ var do_not_pluralize = [
 	'getting_started',
 	'html'
 ]
+var to_uppercase = [
+	'css',
+	'html'
+]
 $(document).ready(function() {
 	// Create the master Isotope container variable:
 	var $container = $('#resources');
@@ -25,6 +29,9 @@ $(document).ready(function() {
 		var element_title = _.titleize(_.humanize(element));
 		if(!_.contains(do_not_pluralize,element)) {
 			element_title = _.pluralize(element_title);
+		}
+		if(_.contains(to_uppercase, element)) {
+			element_title = element.toUpperCase();
 		}
 		$('#filters').append($('<a href="#' + element + '" class="list-group-item" data-filter=".' + element + '">'+ element_title + '</a>'));
 	});
