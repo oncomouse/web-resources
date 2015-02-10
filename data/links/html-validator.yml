@@ -1,0 +1,4 @@
+url: http://validator.w3.org/
+title: W3C Markup Validation Service
+description: Check that your HTML document meets standards. This service is useful for verifying that your document will display correctly.
+tags: html, validator
