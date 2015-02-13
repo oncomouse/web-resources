@@ -56,14 +56,18 @@ $(document).ready(function() {
 	if(initial_filter != '') {
 		toggleFilterDisplay('.list-group .active', '#filters .list-group-item[data-filter*="'+initial_filter+'"]');
 	}
-	
-	$container.isotope({
-		itemSelector: '.resource',
-		layoutMode: 'vertical',
-		getSortData: {
-			name: '.title'
-		},
-		sortBy: 'name',
-		filter: initial_filter
+	$.when(
+		$container.isotope({
+			itemSelector: '.resource',
+			layoutMode: 'vertical',
+			getSortData: {
+				name: '.title'
+			},
+			sortBy: 'name',
+			filter: initial_filter
+		})
+	).then(function() {
+		//$('.resource, #sidebar').animate({'opacity': 1.0}, 100);
+		$('.resource, #sidebar').css('opacity', '1.0');
 	});
 });

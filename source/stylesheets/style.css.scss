@@ -25,6 +25,10 @@ body {
 	}
 }
 
+.resource, #sidebar {
+	opacity: 0;
+}
+
 .grey {
 	color: $gray-light;
 	a {
