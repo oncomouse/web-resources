@@ -27,7 +27,7 @@ body {
 
 .resource, #sidebar {
 	opacity: 0;
-	&.blessed {
+	body.isotoped & {
 		opacity: 1.0;
 	}
 }
