@@ -1,0 +1,1 @@
+var filter_config={"do-not-pluralize":["typography","css","responsive","responsive_design","getting_started","html","sublime_text"],"to-uppercase":["css","html"]};
