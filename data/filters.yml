@@ -1,0 +1,14 @@
+# The names of tags not to pluralize when displaying the filter menu:
+do-not-pluralize:
+  - typography
+  - css
+  - responsive
+  - responsive_design
+  - getting_started
+  - html
+  - sublime_text
+
+# The names of tags to convert to all uppercase (html to HTML, for instance):
+to-uppercase:
+  - css
+  - html

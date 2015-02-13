@@ -5,4 +5,5 @@
 // require 'bootstrap-sass-official/assets/javascripts/bootstrap'
 //= require 'isotope/dist/isotope.pkgd'
 //= require 'plugins'
+//= require 'filters'
 //= require 'site'

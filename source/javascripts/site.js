@@ -1,17 +1,3 @@
-var do_not_pluralize = [
-	'typography',
-	'css',
-	'responsive',
-	'responsive_design',
-	'getting_started',
-	'html',
-	'sublime_text'
-];
-var to_uppercase = [
-	'css',
-	'html'
-];
-
 function toggleFilterDisplay(old_selector, new_selector) {
 	$(old_selector).removeClass('active');
 	$(new_selector).addClass('active');
@@ -36,10 +22,10 @@ $(document).ready(function() {
 	// Generate links to control isotope's filtering code:
 	_.each(filters, function(element, index, list) {
 		var element_title = _.titleize(_.humanize(element));
-		if(!_.contains(do_not_pluralize,element)) {
+		if(!_.contains(filter_config['do-not-pluralize'],element)) {
 			element_title = _.pluralize(element_title);
 		}
-		if(_.contains(to_uppercase, element)) {
+		if(_.contains(filter_config['to-uppercase'], element)) {
 			element_title = element.toUpperCase();
 		}
 		$('#filters').append($('<a href="#' + element + '" class="list-group-item" data-filter=".' + element + '">'+ element_title + '</a>'));
