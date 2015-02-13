@@ -19,6 +19,7 @@ function toggleFilterDisplay(old_selector, new_selector) {
 }
 
 $(document).ready(function() {
+	$('html').toggleClass('no-js js');
 	// Create the master Isotope container variable:
 	var $container = $('#resources');
 	
