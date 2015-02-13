@@ -1,3 +1,5 @@
+# The names for these two values must match the tag values used in the links folder EXACTLY.
+
 # The names of tags not to pluralize when displaying the filter menu:
 do-not-pluralize:
   - typography
