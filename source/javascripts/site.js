@@ -68,6 +68,6 @@ $(document).ready(function() {
 		})
 	).then(function() {
 		//$('.resource, #sidebar').animate({'opacity': 1.0}, 100);
-		$('.resource, #sidebar').css('opacity', '1.0');
+		$('.resource, #sidebar').addClass('blessed');
 	});
 });

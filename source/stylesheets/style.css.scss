@@ -27,7 +27,11 @@ body {
 
 .resource, #sidebar {
 	opacity: 0;
+	&.blessed {
+		opacity: 1.0;
+	}
 }
+
 
 .grey {
 	color: $gray-light;
