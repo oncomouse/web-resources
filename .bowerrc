@@ -1,3 +1,6 @@
 {
 	"directory": "source/vendor"
+	"scripts": {
+		"postinstall": "rm -rf source/vendor/underscore"
+	}
 }
