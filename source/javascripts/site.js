@@ -10,7 +10,7 @@ $(document).ready(function() {
 	var $container = $('#resources');
 	
 	// Load underscore.string into _:
-	_.mixin(s.exports());
+	//_.mixin(s.exports());
 	
 	// Build a list of filters:
 	var filters = [];
@@ -21,7 +21,7 @@ $(document).ready(function() {
 	
 	// Generate links to control isotope's filtering code:
 	_.each(filters, function(element, index, list) {
-		var element_title = _.titleize(_.humanize(element));
+		var element_title = _.startCase(element);
 		if(!_.contains(filter_config['do-not-pluralize'],element)) {
 			element_title = _.pluralize(element_title);
 		}
