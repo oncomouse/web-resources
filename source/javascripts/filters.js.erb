@@ -1,1 +1,1 @@
-var filter_config = <%= data.filters.to_json %>;
+var filter_config = <%= data.respond_to?(:filters) ? data.filters.to_json : "{'do-not-pluralize': [], 'to-uppercase': []}" %>;
