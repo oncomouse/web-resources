@@ -9,9 +9,6 @@ $(document).ready(function() {
 	// Create the master Isotope container variable:
 	var $container = $('#resources');
 	
-	// Load underscore.string into _:
-	//_.mixin(s.exports());
-	
 	// Build a list of filters:
 	var filters = [];
 	$('.resource').each(function() {
