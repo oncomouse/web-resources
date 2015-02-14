@@ -1,14 +1,12 @@
 <%
-	if data.respond_to?(:filters)
-		if not data.filters.has_key? 'do-not-pluralize'
-			data.filters['do-not-pluralize'] = []
-		end
-		if not data.filters.has_key? 'to-uppercase'
-			data.filters['to-uppercase'] = []
-		end
-	else
-		data.store 'filters', {'do-not-pluralize' => [], 'to-uppercase' => []}
+	default_filters = {
+		'do-not-pluralize' => [],
+		'to-uppercase' => []
+	}
+	if not data.respond_to?(:filters)
+		# Load default value if no filters.yml exists:
+		data.store 'filters', default_filters
 	end
 	
-	
-%>var filter_config = <%= data.filters.to_json %>;
+# Merge filters.yml contents with default hash to prevent malformed or incomplete filters.yml from breaking JS:
+%>var filter_config = <%= data.filters.to_hash.merge(default_filters){|k,o,n| o}.to_json %>;
