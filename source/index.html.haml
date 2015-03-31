@@ -18,6 +18,7 @@ title: Web Resources
 				- data.links.each do |link|
 					- link[1]['id'] = link[0]
 					- link = link[1]
+					- link['tags'] = '' if not link.has_key? 'tags'
 					%div{ :class => 'resource ' + link['tags'].gsub(',','')}
 						%h2.title= link_to link["title"], link["url"]
 						:markdown
