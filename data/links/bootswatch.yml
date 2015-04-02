@@ -1,0 +1,5 @@
+url: http://bootswatch.com/
+title: Boot Swatch
+tags: bootstrap
+description:
+  Drop-in replacements for Bootstrap that theme differently out of the box. Can also be loaded over the [Bootstrap CDN](http://www.bootstrapcdn.com/).
