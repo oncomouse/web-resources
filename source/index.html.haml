@@ -15,11 +15,10 @@ title: Web Resources
 			Showing "<span id="current-filter">All</span>"
 		#resources
 			- if data.respond_to? :links
-				- data.links.each do |link|
-					- link[1]['id'] = link[0]
-					- link = link[1]
+				- data.links.each do |id,link|
+					- link['id'] = id
 					- link['tags'] = '' if not link.has_key? 'tags'
-					%div{ :class => 'resource ' + link['tags'].gsub(',','')}
+					%div{ :class => 'resource ' + link['tags'].gsub(',',''), :id => link['id']}
 						%h2.title= link_to link["title"], link["url"]
 						:markdown
 							#{link['description']}
