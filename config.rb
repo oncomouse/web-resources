@@ -71,6 +71,7 @@ configure :build do
   ignore "javascripts/plugins.js"
   ignore "javascripts/site.js"
   ignore "stylesheets/style.css"
+  ignore "stylesheets/bootstrap.css"
   # Change this to build with a different file root.	
   #set :http_prefix, "/my/prefix/folder"
 
