@@ -10,3 +10,6 @@
 	
 # Merge filters.yml contents with default hash to prevent malformed or incomplete filters.yml from breaking JS:
 %>var filter_config = <%= data.filters.to_hash.merge(default_filters){|k,o,n| o}.to_json %>;
+if ( typeof define === 'function' && define.amd ) {
+	define('filters', function() { return filter_config; });
+}
