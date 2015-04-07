@@ -9,6 +9,7 @@ do-not-pluralize:
   - getting_started
   - html
   - sublime_text
+  - bootstrap
 
 # The names of tags to convert to all uppercase (html to HTML, for instance):
 to-uppercase:
