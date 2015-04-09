@@ -1,0 +1,5 @@
+url: http://www.zytrax.com/tech/web/ssi.htm
+title: Server Side Includes
+tags: html, server
+description: |
+  SSI is a technology to add a limited range of dynamic content to your pages. You can use these commands on your ASU sites, but they won't work from your local computer.
